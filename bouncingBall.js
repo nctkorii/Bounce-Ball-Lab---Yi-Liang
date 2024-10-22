@@ -56,7 +56,7 @@ const canvas = document.getElementById("myCanvas");
     }
 
     if(y2 + ballRadius > canvas.height){
-        dy2 = -dy2 * 1;
+        dy2 = -dy2 * 0.6;
         y2 = canvas.height - ballRadius;
     }
 
@@ -65,4 +65,4 @@ const canvas = document.getElementById("myCanvas");
     }
 }
 
-  setInterval(update, 20);  
+  setInterval(update, 20);
